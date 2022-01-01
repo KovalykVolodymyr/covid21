@@ -1,0 +1,61 @@
+@import './variables';
+@import './fonts';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family-main;
+  letter-spacing: $letter-space-sm;
+
+  &:active,
+  &:focus {
+    outline: none !important;
+  }
+}
+
+body {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  background-color: $color-brightgrey !important;
+
+  button {
+    cursor: pointer;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  select,
+  input {
+    padding: 8px 10px;
+    font-weight: 300;
+    font-size: 16px;
+    width: 100%;
+    line-height: 1;
+    color: $color-black;
+    background-color: $color-white;
+    border: 1px solid $color-lightgrey;
+
+    &::placeholder {
+      font-weight: 300;
+      font-size: 16px;
+      color: $color-darkgrey;
+    }
+
+    &:disabled {
+      background-color: $color-brightgrey;
+    }
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
