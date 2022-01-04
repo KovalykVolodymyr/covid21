@@ -32,7 +32,7 @@ const App = () => {
     <div className={styles.App}>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/">Covid21</Navbar.Brand>
+          <Navbar.Brand href="/">Covid19</Navbar.Brand>
           <Nav className="me-auto">
             <Link to="/" className="nav-link">
               Home
