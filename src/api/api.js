@@ -26,4 +26,14 @@ const featchDailyData = async () => {
     console.log(error)
   }
 }
-export { getGlobalData, featchDailyData }
+
+const getAllCountries = async () => {
+  try {
+    const data = await axios.get(`https://corona.lmao.ninja/v2/countries?yesterday&sort`, {})
+    return data
+  } catch (error) {
+    return false
+  }
+}
+
+export { getGlobalData, featchDailyData, getAllCountries }
